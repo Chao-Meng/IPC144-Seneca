@@ -1,0 +1,23 @@
+Full Name:Chao Meng
+Student Number:128438215
+Seneca Email Address:cmeng14@myseneca.ca
+Section Information Code:ZAA
+
+Answer 1.sum_priority[priority[i]-1] += cost[i];
+
+I use the index to associate the data in the prallel array, but pay attention to whether the content of the index is consistent with my expections. For example, in this workshop, I hope to use the priority as the index to sum the costs of the same priority, so I redefine te array and use the priority(at fact it is priority -1) as the index to calculate the sum of  corresponding cost value.
+
+The key used to accomplish this is "index", especially use "index" correctly..
+
+Answer 2.The array can be accessed randomly. When accessing the i element, the address of the i element needs to be located. The positioning formula is the address of the i element is equal to the dirst address plus i multipule the size of the element type(if it is int, the size is 4 byte), starting from 0 does not need to subtract 1 for each calculation, which is more convenient.
+
+for example:
+
+for (i = 0; i < num_items; i++) {
+		printf("%3d%7d%9c%15.2lf\n", i + 1, priority[i], finance[i], cost[i]);
+		
+	};
+	In the workshop 4, if i begins 1, the printf statement shoule be "printf("%3d%7d%9c%15.2lf\n",i, priority[i-1], finance[i-1], cost[i-1]);", it is not convenient.
+	
+Answer 3.An array is a collection of several variables with a certain order relationship, we abbreviatw it as an array, and the variable in ir are called the elements of the arrar. For example, we could define our grades in the one semester of kindergarten as an array. The name is "grade", if there are 5 exams in a semester, then the array should be wrriten like this grade[5], that the element is our 5 grades. Such as in the 5 exam, we took 98,99,100,99,99, elements should be written like this {98,99,100,99,99}, it needs to be enclosed in {}.So integrated all together, the array is like this, grade[5]={98,99,100,99,99}.
+But we should pay attention to a problem, although we have 5 elements, if want to access the first element, you should use grade[0],not grade[1]. And you should use grade[1[ grade[2] grade[3] grade[4] to access the 2ed 3rd 4th 5th elements in turn.

@@ -1,0 +1,14 @@
+In line number 726 of your output:
+The output should be:
+Are you sure you CLOSE this ticket? ([Y]es|[N]o): Y
+                                          ^
+But your output is: 
+Are you sure you CLOSE this ticket? ([Y]es | [N]o): Y
+                                          ^
+
+Unmatched character details:
+The character in column 43 is supposed to be:
+  [|] ASCII code(124)
+but you printed
+  [Space] ASCII code(32)
+

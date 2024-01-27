@@ -1,0 +1,14 @@
+In line number 101 of your output:
+The output should be:
+SKU:0034443 Price: $71.99
+            ^
+But your output is: 
+SKU:0034443  Price: $71.99
+            ^
+
+Unmatched character details:
+The character in column 13 is supposed to be:
+  [P] ASCII code(80)
+but you printed
+  [Space] ASCII code(32)
+

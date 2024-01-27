@@ -1,0 +1,10 @@
+a2ms4Master.c: In function ‘main’:
+a2ms4Master.c:41:5: warning: implicit declaration of function ‘loadAccounts’ [-Wimplicit-function-declaration]
+     recsLoaded = loadAccounts(accounts, ACCOUNT_SIZE);
+     ^
+a2ms4Master.c:44:5: warning: implicit declaration of function ‘loadTickets’ [-Wimplicit-function-declaration]
+     recsLoaded = loadTickets(tickets, TICKET_SIZE);
+     ^
+/tmp/ccRHF1Mi.o: In function `main':
+a2ms4Master.c:(.text+0xa6): undefined reference to `loadAccounts'
+collect2: error: ld returned 1 exit status

@@ -1,0 +1,16 @@
+Full Name:Chao Meng
+Student Number:128438215
+Seneca Email Address:cmeng14@myseneca.ca
+Section Information Code:ZAA
+
+Answer 1.I found the most challenging in defining the function ‘getCString’.
+At the beginning, I thought my logic was fine and used the determination of whether the last two input parameters were equal as an initial determination. When the next two input parameters were not equal then it was divided into two cases for further determination. But when I tested the code, I found the overflow error because one of the conditions of the test was to input the string ‘Seneca College’, which has a string length of 14, but in the test case, the number of members of the given array was 7, so it caused the overflow error. So, what I was trying to do was to use the method of dynamically allocating memory to this string, and it did work, but the solution given by the professor in the subsequent class was much more concise and straightforward. Also used in the definition of this function was the method of reading spaces in the string, specifically using this ‘%[^\n]’, which was also a relatively new point of knowledge for me. The third point is that I also used the function of string copying and the function of clearing the contents of the buffer cache in the process of defining this function.
+There is no shortcut to overcome the challenge, only debugging the code several times or using other alternative solutions, and then debugging again step by step.
+When I saw the function and the requirements of the function definition, the first thing that came to my mind was where to start and what would be the best way to solve the problem. When debugging, I interrupt at the point where I encounter the problem and debug step by step. When testing, I wrote some test cases for testing, and in addition to that I commented out the code that had no problems, and then tested the remaining part of the function.
+
+Answer 2. In the program a1ms2.c, we called the functions in the "helper function" library many times, such as 'getInterger', 'getPositive', 'getCString', etc. If we did not set up the "helper function" library om asvance, then we need to write a lot more code and the whole program will become very complicated.
+
+Answer 3. Because structures not only record different types of data, they also make data strustures "highly cohesive and low-coupled", which makes them easier to read and be understood, easy to be carried around. They are stored in a way that improves CPU access to memory.
+Yes, there are some limitation on the use of structures. For example, struct variables cannot be input and output as a whole. They can only be input and output separately for each member of the struct variable. Second, if a member of a structure variable is itself another structure type, we need to find the lowest level member level by level using operator notation for multiple members, and we can only assign or access and operate on the lowest level member.
+
+

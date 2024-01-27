@@ -1,0 +1,50 @@
+Full Name:Chao Meng
+Student Number:128438215
+Seneca Email Address:cmeng14@myseneca.ca
+Section Information Code:ZAA
+
+Answer 1.
+1)commonHelpers.h 
+In this module, I created these 2 functions as following:
+
+a.void replaceType(char accountType, char* Type);
+The function 'replaceType' was created to display the accounttype as AGENT/CUSTOMER when it is A or C. Since this function code is used several times in the project, it is easier and cleaner code to represent it in one function. Because this function belongs to the public belongs to the common category, not specifically for account or ticket, I put it in the commonHelpers module.
+
+b.void upper(char lower[], int iMaxNum);
+The upper function is used to convert lowercase letters to uppercase letters. Depening on the task, when entering home country , if the characters entered by agent or customer contain lowercase letters, they need to be converted to uppercase.This function belongs to common category, so I put it in the commonHelpers module.
+
+2)account.h 
+In this module, I created these 3 functions as following:
+a.void assignToAccount(struct Account accounts[], int iAccIndex, char tmp[], int iTmpNum, int iSeparatorCount);
+This function is used to assgin the value between each two separators to the corresponding variable.
+
+b.int saveAccounts(struct Account accounts[], int accSize);
+This function is used to read account information from accounts.txt file and write it to a new account txt file after modifing it.
+
+c.int loadAccounts(struct Account accounts[], int accSIZE);
+This function is used to get the values from accounts.txt file and assign each of these values to the corresponding variable.
+
+3)ticket.h In this module, I created these 5 functions as following:
+
+a.void displayTicketDetailHeader(void);
+The displayTicketDetailHeader function code is used several times, so created this function. It is related to ticket, so it is placed in the ticket module.
+
+b.int findTicketIndexByTicketNum(int ticketnumber, const struct Ticket ticket[], int maxnum, int number);
+The function findTicketIndexByTicketNum is used several times to find the index by ticket number, similat to finding the corresponding index by accountNumber.
+
+c.int saveTickets(struct Ticket tickets[], int tickSize);
+This function is similar with function saveAccounts, read ticket information from tickets.txt file and modify the content and then write it to a new ticket txt file.
+
+d.void assignToTicket(struct Ticket tickets[], int iTicketIndex, char tmp[], int iTmpNum, int iSeparatorCount);
+This function is similar with assignToAccount function, to assign the value between each two separators to the corresponding variable.
+
+e.int loadTickets(struct Ticket tickets[], int tickSize);
+This function is used to get the values from tickets.txt file and assign each of these values to the corresponding variable.
+{
+4)accountTicketingUI.h
+None developed.
+
+Answer 2. As I developed it, my interest grew as the features became more complete and I could visualize more of its interface and the scenarios in which it could be used. This ticketing system is very similar to the systems we have used before in cinemas or other venues. So, in a broad sense, the first reason I was interested in the development process was the possibility of implementing these 9 functions to form a relatively complete ticketing system. That's something to be proud of. And the design of milestone is from easy to complex process, I like it very much, it feels like I am doing an actual project.
+In terms of segmentation, I liked the idea of developing a system that simultaneously verifies member account information with a member account number, username and password, and does not display the wrong category if a piece of information is incorrect. At the same time the system sets requirements for the complexity of the password. The development of these elements is not complicated but interesting and meaningful, not only to achieve functionality but also to protect the member's account information from hackers. A programmer's job is a great thing, to realize his own or others' ideas, to bring convenience and fun to life.
+
+Answer 3. As a soon-to-be programmer, I should love my job and career, so I should not dislike any of the development content from a responsibility point of view. Especially for me to switch from Building HVAC Engineer to computer programming, I cherish every development. If  I have to say one  development process I don't like is the process of reading accounts.txt and tickets.txt files. Originally I planned to use the fscanf function and spent a long time reading the contents of these two files, but when reading the accounts.txt file I encountered special characters, such as character with dot in the middle, and I tried many ways to read them. When reading the tickets.txt file, it was also difficult to read it with fscanf because the number of accounttype and message was not fixed. Later I had to do research and replace the fgets function to finish reading these two files. The process wasn't so much unlikeable as it was confusing. But after going through this, the experience I got is to accumulate more functions and all the keywords etc. in my brain, so that when we encounter a problem that needs to be solved, it is most efficient to call the most appropriate function directly from my brain this library.

@@ -1,0 +1,11 @@
+Full Name:Chao Meng
+Student Number:128438215
+Seneca Email Address:cmeng14@myseneca.ca
+Section Information Code:ZAA
+
+Answer 1)I am a newcomer for programming.Through such a long course and the practice in the workshop, I have learned some VS, matrix and so on operations including how to start  programming,creatiing of a project, personal connection with the server and the operation of some commands. It is very interesting and useful. What impresses me most is that you have to practice a lot to understand deeply.
+
+Answer 2)SSH is a secure login protocol, which provides security for us to remotely log in to the server of the school in Workshop and prevents information leakage in the process of uploading or downloading files remotely.  In Workshop，we could use CMD (Windows), Teminator (Linux), to connect to Seneca matrix Server via SSH for file transfer.  
+
+Answer 3)SFTP=SSH File Transfer Protocol.SFTP is an FTP protocol encapsulated using SSH, and data transmission is encrypted.  Winscp is an open source graphical SFTP client that uses SSH in Windows. In the workshop, we used the winscp client to connect to the Seneca server through SFTP for file transfer.  
+

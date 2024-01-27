@@ -1,0 +1,36 @@
+Full Name:Chao Meng
+Student Number:128438215
+Seneca Email Address:cmeng14@myseneca.ca
+Section Information Code:ZAA
+
+Answer 1.The two possible selections constructs are Case-by-Case and Compound Conditions.
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main() {
+	const int JAN = 1;
+	const int DEC = 12;
+	int  month=0;
+	/*printf("month:");// Compound Conditions
+	scanf("%d", &month);
+	if (month==1)
+			printf("JAN");
+		else if(month==2)
+			printf("FEB");*/
+	printf("month:", month);//Case-by-Case
+	scanf("%d", &month);
+	switch (month) {
+	case 1:
+		printf("JAN");
+		break;
+	case 2:
+		printf(" FEB");
+		break;
+	}
+		return 0;
+	
+}
+
+
+Answer 2.The C language supports 3 types of iteration constructs are "while" "do while" and "for". I used "for" and "do while".Because there is an initial condition for iternation of days, which is to start from 1st day. At the same time, the number of days in every month is clear, that is, the number of cycles is known. In this case, "for" iteration construct is used. For the health rate, test conditions should be met, that is, the value should be within a certain range and the sequence should be executed at least once. In this case, "do while" iteration construct is suitable.
+
+Answer 3.First of all, we should observe to see if there are grammatical mistakes or writing mistakes, and correct them in time if there are any. After checking, execute "build solution" and "run" .If erros are found after run, debugging should be carried step by step. Sepecific methods can use "step over"(F10 key) or "step into" to debug step by step, and modify according to error prompts, and finally run again. At last, repeat the above steps untill the run is successful and the expected results are printed.

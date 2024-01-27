@@ -1,0 +1,18 @@
+Full Name:Chao Meng
+Student Number:128438215
+Seneca Email Address:cmeng14@myseneca.ca
+Section Information Code:ZAA
+
+Answer 1.The user-defined structures encapsulates the parameters related to the function. The types of these parameters can be different and can be used directly next time. In summary, it is very convenient to pass multiple different types of parameters. For example, four parameters are encapsulated in the PlayInfo struct in the workshop, and these four founctions are used again in the main function below. I only need to define a PlayInfo1 or other name and I can use it directly.
+
+Answer 2.If we want to show the final result of the game when the game is over, that is, then the program jumps out of the "do while" loop, print out the last lives,last treasures and moves remaining. If we need to print out the treasure or bomb encountered during each step of the game, we need to record treasure and bomb in the main function. When the program loops once, the elements in the treasure and bomb array, that have not been assigned any value will be assigned value. For example:
+int g=0;
+for(g=0;g<MAX_PATH;g++){
+   if(GameInfo1.history_treasure[g]==0){
+      GameInfo1.history_treasure[g]=GameInfo1.treasure[i];
+break;
+}
+
+
+Answer 3.For me,the problem I spent the longest time on and also the last problem I did is creating an suitable array to record the history position, and comparing the history position with the current position, to check out whether the history position has already been visted before. Because I did not use any array for recording the postion at first, but at last I found I could not compare the positions between historical and current.
+I ried to think about the problem in another way when I could not find a solution, and then I found out I need creat an array if I want to record some value, and I took several attempts to creat the appropriate array of historical locations. In general, change the way of thinking when a solution is not feasible.

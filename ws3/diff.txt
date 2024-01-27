@@ -1,0 +1,14 @@
+In line number 52 of your output:
+The output should be:
+Average overall rating:  3.2
+                      ^
+But your output is: 
+Average overall rating : 3.2
+                      ^
+
+Unmatched character details:
+The character in column 23 is supposed to be:
+  [:] ASCII code(58)
+but you printed
+  [Space] ASCII code(32)
+

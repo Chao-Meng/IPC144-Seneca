@@ -1,0 +1,54 @@
+In file included from a2ms1Master.c:17:0:
+accountTicketingUI.h:29:71: error: array type has incomplete element type
+ int findAccountIndexByAcctNum(int accountnumber, const struct Account account[], int maxnum, int number);
+                                                                       ^
+accountTicketingUI.h:30:58: error: array type has incomplete element type
+ void displayAllAccountDetailRecords(const struct Account account[], int maxnum);
+                                                          ^
+a2ms1Master.c:28:38: error: array type has incomplete element type
+ void populateAccounts(struct Account accounts[], int arrSize);
+                                      ^
+a2ms1Master.c:29:36: error: array type has incomplete element type
+ void populateTickets(struct Ticket tickets[], int arrSize);
+                                    ^
+a2ms1Master.c: In function ‘main’:
+a2ms1Master.c:39:20: error: array type has incomplete element type
+     struct Account accounts[ACCOUNT_SIZE] = { {0} };
+                    ^
+a2ms1Master.c:43:19: error: array type has incomplete element type
+     struct Ticket tickets[TICKET_SIZE] = { {0} };
+                   ^
+a2ms1Master.c:54:5: error: type of formal parameter 1 is incomplete
+     populateAccounts(data.accounts, data.ACCOUNT_MAX_SIZE);
+     ^
+a2ms1Master.c:57:5: error: type of formal parameter 1 is incomplete
+     populateTickets(data.tickets, data.TICKET_MAX_SIZE);
+     ^
+a2ms1Master.c:43:19: warning: unused variable ‘tickets’ [-Wunused-variable]
+     struct Ticket tickets[TICKET_SIZE] = { {0} };
+                   ^
+a2ms1Master.c:39:20: warning: unused variable ‘accounts’ [-Wunused-variable]
+     struct Account accounts[ACCOUNT_SIZE] = { {0} };
+                    ^
+a2ms1Master.c: At top level:
+a2ms1Master.c:71:38: error: array type has incomplete element type
+ void populateAccounts(struct Account accounts[], int arrSize)
+                                      ^
+a2ms1Master.c: In function ‘populateAccounts’:
+a2ms1Master.c:74:20: error: array type has incomplete element type
+     struct Account tmp[5] = {
+                    ^
+a2ms1Master.c:74:20: warning: unused variable ‘tmp’ [-Wunused-variable]
+a2ms1Master.c: At top level:
+a2ms1Master.c:91:36: error: array type has incomplete element type
+ void populateTickets(struct Ticket tickets[], int arrSize)
+                                    ^
+a2ms1Master.c: In function ‘populateTickets’:
+a2ms1Master.c:94:19: error: array type has incomplete element type
+     struct Ticket tmp[5] = {
+                   ^
+a2ms1Master.c:94:19: warning: unused variable ‘tmp’ [-Wunused-variable]
+accountTicketingUI.c: In function ‘menuAgent’:
+accountTicketingUI.c:148:4: error: a label can only be part of a statement and a declaration is not a statement
+    int iMaxAccNum = 0;
+    ^

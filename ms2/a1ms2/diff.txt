@@ -1,0 +1,14 @@
+In line number 131 of your output:
+The output should be:
+50001 AGENT     Will Smith       1988   188222.75 CANADA     MIBAgent-J agent007
+       ^
+But your output is: 
+50001 Agent     Will Smith       1988   188222.75 CANADA     MIBAgent-J agent007
+       ^
+
+Unmatched character details:
+The character in column 8 is supposed to be:
+  [G] ASCII code(71)
+but you printed
+  [g] ASCII code(103)
+

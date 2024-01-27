@@ -1,0 +1,17 @@
+Full Name:Chao Meng
+Student Number:128438215
+Seneca Email Address:cmeng14@myseneca.ca
+Section Information Code:ZAA
+
+Answer 1.In computer, binary is used to store and transmit information because it is relatively easy.10.12 is 1010.0001 1110 1000 0101 0001 after converting to the binary used in computer operations, but there is a loss of accuracy in the process of converting binary to decimal output is 10.119999999999999. So it does not display the value expected in the program.
+
+Answer 2. a) intValue%2=0,1.
+          b) intValue%3=0,1,2.
+          c) intValue%100=0,1,2,3,4.....99(from 0 to 99).
+		  
+		  
+		  
+Answer 3. 1)estimatedSlicesConsumed / 12;
+          2)wholePizzasEaten % estimatedSlicesConsumed;
+		  
+Answer 4.It is easier to calculate integers than float-point.For example, adding, subtracting, multiplying and dividing at $9.92 is a little complicated, but it is much easier if we convert to 992 cents. So it is often a best pratice to convert floating-poing values to integers when performing arthmetic operations.

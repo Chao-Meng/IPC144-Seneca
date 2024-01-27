@@ -1,0 +1,20 @@
+Full Name:Chao Meng
+Student Number:128438215
+Seneca Email Address:cmeng14@myseneca.ca
+Section Information Code:ZAA
+
+Answer 1.I applied the three string library functions strlen, strcpy and strcmp in assignment2 milestone2. The role of each function is different. When the program requires the return of the number of characters in the string, I will choose to use the strlen function. If I need to copy the content of one string to another, I will use strcpy. For example, when the ticket type is 'A' in milestone2, it displays 'ACTIVE' as the ticketType. At this time, I need to copy the string 'ACTIVE' to a variable. And print out this variable. Absolutely, the reason why I use a variable is the variable type must be considered, so methods such as setting intermediate variables will be used. If I need to compare whether the contents of two strings are the same, I will use the strcmp function. For example, when comparing the account, username and password entered by the user with the system content, the strcmp function is used. I do not particularly like which function, I think the right one is the best. The function that can achieve this requirement is the best choice.
+
+Answer 2.In addition to the requirements in the document, I created the following functions:
+void replaceType(char accountType, char* Type);
+void upper(char lower[], int iMaxNum);
+void displayTicketDetailHeader(void);
+int findTicketIndexByTicketNum(int ticketnumber, const struct Ticket ticket[], int maxnum, int number);
+
+The function 'replaceType' was created to display the accounttype as AGENT/CUSTOMER when it is A or C. Since this function code is used several times in the project, it is easier and cleaner code to represent it in one function. Because this function belongs to the public belongs to the common category, not specifically for account or ticket, I put it in the commonHelpers module.
+
+The upper function is used to convert lowercase letters to uppercase letters. Depening on the task, when entering home country , if the characters entered by agent or customer contain lowercase letters, they need to be converted to uppercase.This function belongs to common category, so I put it in the commonHelpers module.
+
+The displayTicketDetailHeader function code is used several times, so created this function. It is related to ticket, so it is placed in the ticket module.
+
+The function findTicketIndexByTicketNum is used several times to find the index by ticket number, similat to finding the corresponding index by accountNumber.

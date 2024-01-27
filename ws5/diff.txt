@@ -1,0 +1,14 @@
+In line number 179 of your output:
+The output should be:
+You should play again and try to beat your score!
+                                                 ^
+But your output is: 
+You should play again and try to beat your score!!
+                                                 ^
+
+Unmatched character details:
+The character in column 50 is supposed to be:
+  [Empty Line] ASCII code(0)
+but you printed
+  [!] ASCII code(33)
+

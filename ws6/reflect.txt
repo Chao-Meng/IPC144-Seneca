@@ -1,0 +1,50 @@
+Full Name:Chao Meng
+Student Number:128438215
+Seneca Email Address:cmeng14@myseneca.ca
+Section Information Code:ZAA
+
+Answer 1.There are 9 members of type int and double in struct "ReportData", variable of type double occupies 8 bytes, and variable of tye int occupies 4 bytes. Without digging into advanced memory management, "ReportData" struct requires 60 bytes. But it requires 72 bytes according to the current arrangement order,if considering the rules of memory alignment.
+struct ReportData {
+	int sku;
+	double price;
+	int calories;
+	double weight_lbs;
+	double weight_kg;
+	int weight_g;
+	double total_servings;
+	double cost_per_serving;
+	double cost_per_calorie;
+};
+We could use point in function "DisplayReportData" if we want to improve the passing of information to functions.For example the origianl code of function "DisplayReportData" is void displayReportData(const struct ReportData report[MAX_PRODUCT], const int cheapestoption) , now I could use void displayReportData(const struct ReportData *rep, const int cheapestoption) instead of it. Because there are a lot of members in the struct and the input parameter of this function is a struct array, sending these data requires more time and memory, which affects the efficiency of the program. If we use a structure pointer, then only an address is passed from the actual parameter to the formal parameter, which is fast and occupies less memory.
+
+Answer 2.Considersing there are some common members in the two structures, we could use "CatFoodInfo"structure variable instead of the common members in "ReportDada" structure.
+The new "ReportData" structure is as following:
+struct ReportData {
+	struct CatFoodInfo ReportInfo;
+	/*int sku;
+	double price;
+	int calories;
+	double weight_lbs;*/
+	double weight_kg;
+	int weight_g;
+	double total_servings;
+	double cost_per_serving;
+	double cost_per_calorie;
+};
+Modified code in the function "displayReportDta" is as following:
+int j = 0;
+	char star[4] = { '*','*','*','\0'};
+	for (; j < MAX_PRODUCT; j++) {
+		if (j == jj) {
+			if (cheapestoption != 0) {
+				printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf %s\n", report[j].ReportInfo.sku, report[j].ReportInfo.price, report[j].ReportInfo.weight, report[j].weight_kg,
+					report[j].weight_g, report[j].ReportInfo.calories, report[j].total_servings, report[j].cost_per_serving, report[j].cost_per_calorie,star);
+			}else {
+				printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf\n", report[j].ReportInfo.sku, report[j].ReportInfo.price, report[j].ReportInfo.weight, report[j].weight_kg,
+					report[j].weight_g, report[j].ReportInfo.calories, report[j].total_servings, report[j].cost_per_serving, report[j].cost_per_calorie);
+			}
+		} else {
+			printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf\n", report[j].ReportInfo.sku, report[j].ReportInfo.price, report[j].ReportInfo.weight, report[j].weight_kg,
+				report[j].weight_g, report[j].ReportInfo.calories, report[j].total_servings, report[j].cost_per_serving, report[j].cost_per_calorie);
+		}
+	}
